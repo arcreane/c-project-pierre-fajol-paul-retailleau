@@ -12,17 +12,17 @@ int main(void)
     InitWindow(screenWidth, screenHeight, "Projet");
 
     //-----------personnage------------
-    const int sizePersoHeight = 100;
-    const int sizePersoWidth = 50;
+    const float sizePersoHeight = 100;
+    const float sizePersoWidth = 50;
 
     Rectangle personnage = { 10, GetScreenHeight() - sizePersoHeight, sizePersoWidth, sizePersoHeight };
     //---------------------------------
 
     
     //-----------obstacle -------------
-    const int sizeObsHeight = 20;
-    const int sizeObsWidth = 20;
-    int vitesseObstacle = 4;
+    const float sizeObsHeight = 20;
+    const float sizeObsWidth = 20;
+    int vitesseObstacle = 1;
 
     Rectangle obstacle = { GetScreenWidth() - sizeObsWidth, GetScreenHeight() - sizeObsHeight,sizeObsWidth , sizeObsHeight };
     //---------------------------------
@@ -81,9 +81,9 @@ int main(void)
             name[letterCount] = '\0';
         }
 
-        //affichage de la text box et bord rouge si souris dessus
+        //affichage de la text box et bord rouge si souris dessus  if (mouseOnText) else
         DrawRectangleRec(textBox, LIGHTGRAY);
-        if (mouseOnText) DrawRectangleLines((int)textBox.x, (int)textBox.y, (int)textBox.width, (int)textBox.height, RED);
+        if (mouseOnText)DrawRectangleLines((int)textBox.x, (int)textBox.y, (int)textBox.width, (int)textBox.height, RED);
         else DrawRectangleLines((int)textBox.x, (int)textBox.y, (int)textBox.width, (int)textBox.height, DARKGRAY);
 
         //Affcihage du texte dans la textBox
