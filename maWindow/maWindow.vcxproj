@@ -142,17 +142,28 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="AugmentationVie.cpp" />
+    <ClCompile Include="AugmentationVitesse.cpp" />
+    <ClCompile Include="BaisseVie.cpp" />
     <ClCompile Include="Bonus.cpp" />
     <ClCompile Include="Item.cpp" />
     <ClCompile Include="Malus.cpp" />
     <ClCompile Include="maWindow.cpp" />
     <ClCompile Include="Personnage.cpp" />
+    <ClCompile Include="RalentissementVitesse.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="AugmentationVie.h" />
+    <ClInclude Include="AugmentationVitesse.h" />
+    <ClInclude Include="BaisseVie.h" />
     <ClInclude Include="Bonus.h" />
     <ClInclude Include="Item.h" />
     <ClInclude Include="Malus.h" />
     <ClInclude Include="Personnage.h" />
+    <ClInclude Include="RalentissementVitesse.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="question.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

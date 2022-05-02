@@ -2,6 +2,7 @@
 #include "Bonus.h"
 Bonus::Bonus(std::string n):Item() {
 	name = n;
+	Item::setPouvoir(1);
 	//color = GREEN;
 	Item::setColor(GREEN);
 }

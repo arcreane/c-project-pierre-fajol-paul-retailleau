@@ -6,6 +6,7 @@ Item::Item(){
 	radius = 20;
 	color = BLACK;
 	isValid = true;
+	pouvoir=0;
 }
 int Item::getCenterX() {
 	return position.x;
@@ -34,4 +35,11 @@ void Item::setIsValid(bool show) {
 }
 void Item::setCenterX(int x) {
 	position.x = x;
+}
+
+int Item::getPouvoir() {
+	return pouvoir;
+}
+void Item::setPouvoir(int x) {
+	pouvoir = x;
 }
